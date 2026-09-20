@@ -16,3 +16,13 @@ Source: `airwave.py`. No changes to Hyprland configuration are required.
 
 Radio presets include SomaFM, ROCK ANTENNE, Hotmix Radio, and Back2HipHop.
 Playback uses mpv JSON IPC: https://mpv.io/manual/stable/#json-ipc
+
+## Terminal tools
+
+Three standalone Python tools are in `terminal-tools/` and need only Python's standard library:
+
+- `./terminal-tools/wiki.py "query"` searches Wikipedia, then lets you read a result summary. Run without a query to be prompted.
+- `./terminal-tools/rain.py` animates rain in the terminal. Press `q` or Ctrl+C to quit.
+- `./terminal-tools/weather.py [city]` shows current conditions and a five-day forecast. Run `./terminal-tools/weather.py --set-city "City, Country"` once to save a default location.
+
+Weather data comes from [Open-Meteo](https://open-meteo.com/); Wikipedia uses its public API.
