@@ -23,6 +23,6 @@ Three standalone Python tools are in `terminal-tools/` and need only Python's st
 
 - `./terminal-tools/wiki.py "query"` searches Wikipedia, then lets you read a result summary. Run without a query to be prompted.
 - `./terminal-tools/rain.py` animates rain in the terminal. Press `q` or Ctrl+C to quit.
-- `./terminal-tools/weather.py [city]` shows current conditions and a five-day forecast. Run `./terminal-tools/weather.py --set-city "City, Country"` once to save a default location.
+- `./terminal-tools/weather.py [city]` shows current conditions and a five-day forecast. The weather tool asks for your city on first run and saves it for next time. You can also set or change the default with `./terminal-tools/weather.py --set-city "City, Country"`.
 
 Weather data comes from [Open-Meteo](https://open-meteo.com/); Wikipedia uses its public API.

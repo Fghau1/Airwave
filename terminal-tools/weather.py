@@ -66,7 +66,9 @@ def main():
             return 1
     city = " ".join(args).strip() or saved_city()
     if not city:
-        city = input("City (you can save a default with --set-city CITY): ").strip()
+        city = input("Your city (saved for next time): ").strip()
+        if city:
+            save_city(city)
     if not city:
         print("Please provide a city name.", file=sys.stderr)
         return 2
